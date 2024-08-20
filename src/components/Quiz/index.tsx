@@ -48,7 +48,7 @@ const Quiz = () => {
                           ? "bg-red-300 text-slate-800"
                           : correct
                           ? "bg-green-500 text-slate-200"
-                          : ""
+                          : "bg-teal-400 text-slate-800"
                       }`
                     : "bg-teal-400 text-slate-800"
                 }`}
