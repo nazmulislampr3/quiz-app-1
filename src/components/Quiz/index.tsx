@@ -41,16 +41,16 @@ const Quiz = () => {
             return (
               <div
                 key={index}
-                className={`text-xl font-semibold text-slate-800 bg-teal-400 px-4 py-3 md:px-6 md:py-7 cursor-pointer flex gap-3 ${
+                className={`text-xl font-semibold  px-4 py-3 md:px-6 md:py-7 cursor-pointer flex gap-3 ${
                   selectedAnswer
                     ? `${
                         selectedWrong
-                          ? "bg-red-300"
+                          ? "bg-red-300 text-slate-800"
                           : correct
                           ? "bg-green-500 text-slate-200"
                           : ""
                       }`
-                    : ""
+                    : "bg-teal-400 text-slate-800"
                 }`}
                 onClick={() => submitAnswer(currentQuiz, index)}
               >
